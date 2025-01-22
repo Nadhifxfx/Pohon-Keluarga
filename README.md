@@ -1,8 +1,9 @@
 # Semantic Network Pohon Keluarga
 
 **Soal :**
-•	Tulislah Representasi Pengetahuan dari pohon keluarga diatas. Dengan relasi orang tua, saudara laki2, saudara Perempuan, paman, bibi, kakek, nenek dan sepupu. Menggunakan pohon 1. 
-•	Buatlah progam python untuk Representasi Pengetahuan di bawah ini
+•	Tulislah Representasi Pengetahuan dari pohon keluarga diatas. Dengan relasi orang tua, saudara laki2, saudara Perempuan, paman, bibi, kakek, nenek dan sepupu.<br> 
+•	Buatlah progam python untuk Representasi Pengetahuan di bawah ini<br>
+
 ![image](https://github.com/user-attachments/assets/fd42e616-449a-455d-9d37-b6116a5584c2)
 
 
