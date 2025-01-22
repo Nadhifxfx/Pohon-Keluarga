@@ -1,12 +1,10 @@
 # Semantic Network Pohon Keluarga
 
 **Soal :**<br>
-•	Tulislah Representasi Pengetahuan dari pohon keluarga diatas. Dengan relasi orang tua, saudara laki2, saudara Perempuan, paman, bibi, kakek, nenek dan sepupu.<br> 
 •	Buatlah progam python untuk Representasi Pengetahuan di bawah ini<br>
+•	Dengan relasi orang tua, saudara laki2, saudara Perempuan, paman, bibi, kakek, nenek dan sepupu.<br> 
 
 ![image](https://github.com/user-attachments/assets/fd42e616-449a-455d-9d37-b6116a5584c2)
-
-
 
  # Jawaban
 
@@ -19,34 +17,34 @@ G = nx.DiGraph()
 
 # Menambahkan node (anggota keluarga) dan relasi (edges)
 relationships = [
-    ("Hadi", "Fathur", "orang tua"),
+    ("Hadi", "Desi", "orang tua"),
     ("Hadi", "Wahyu", "orang tua"),
     ("Hadi", "Rina", "orang tua"),
     ("Hadi", "Ardi", "orang tua"),
-    ("Nadhif", "Fathur", "orang tua"),
-    ("Nadhif", "Wahyu", "orang tua"),
-    ("Nadhif", "Rina", "orang tua"),
-    ("Nadhif", "Ardi", "orang tua"),
+    ("Ferdie", "Desi", "orang tua"),
+    ("Ferdie", "Wahyu", "orang tua"),
+    ("Ferdie", "Rina", "orang tua"),
+    ("Ferdie", "Ardi", "orang tua"),
     ("Bayu", "Tari", "orang tua"),
-    ("Bayu", "Fathur", "pasangan"),
+    ("Bayu", "Desi", "pasangan"),
     ("Fahrul", "Tari", "pasangan"),
     ("Fahrul", "Wanda", "orang tua"),
-    ("Fathur", "Tari", "orang tua"),
+    ("Desi", "Tari", "orang tua"),
     ("Tari", "Wanda", "orang tua"),
-    ("Fathur", "Nurul", "orang tua"),
-    ("Fathur", "Yanto", "orang tua"),
+    ("Desi", "Nurul", "orang tua"),
+    ("Desi", "Yanto", "orang tua"),
     ("Rina", "Hamzah", "orang tua"),
     ("Nurul", "Aji", "orang tua"),
     ("Nurul", "Gunawan", "orang tua"),
     ("Ardi", "Eka", "orang tua"),
     ("Ardi", "Mira", "orang tua"),
     ("Ardi", "Bastian", "orang tua"),
-    ("Ana", "Eka", "orang tua"),
-    ("Ana", "Mira", "orang tua"),
-    ("Ana", "Bastian", "orang tua"),
+    ("Arya", "Eka", "orang tua"),
+    ("Arya", "Mira", "orang tua"),
+    ("Arya", "Bastian", "orang tua"),
     ("Mira", "Anggun", "orang tua"),
     ("Mira", "Boy", "orang tua"),
-    ("Ana", "Ardi", "pasangan")
+    ("Arya", "Ardi", "pasangan")
 ]
 
 # Menambahkan edges ke graf berdasarkan relasi
@@ -56,12 +54,12 @@ for parent, child, relation in relationships:
 # Mengatur posisi node secara manual
 pos = {
     "Hadi": (0, 6),
-    "Nadhif": (2, 6),
+    "Ferdie": (2, 6),
     "Bayu": (-3, 4),
     "Wahyu": (0, 4),
     "Rina": (2, 4),
     "Ardi": (4, 4),
-    "Fathur": (-1, 4),
+    "Desi": (-1, 4),
     "Fahrul": (-4, 2),
     "Tari": (-2, 2),
     "Wanda": (-2, 0),
@@ -73,7 +71,7 @@ pos = {
     "Eka": (3, 2),
     "Mira": (5, 2),
     "Bastian": (6, 2),
-    "Ana": (5, 4),
+    "Arya": (5, 4),
     "Anggun": (5, 0),
     "Boy": (6, 0)
 }
@@ -86,13 +84,12 @@ nx.draw(G, pos, with_labels=True, node_size=2000, node_color="skyblue", font_siz
 
 # Menambahkan label untuk jenis hubungan pada edges
 edge_labels = nx.get_edge_attributes(G, 'relationship')
-nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8)
+nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8, font_color="green")
 
 plt.title("Jaringan Semantik Pohon Keluarga (Posisi Manual)")
 plt.show()
-
-
 ```
 **Output :** <br>
-![image](https://github.com/user-attachments/assets/344c16a2-4df6-4a14-9670-86ce16ea9927)
+![image](https://github.com/user-attachments/assets/db0572f1-28d8-4315-adbf-fcbf682b0839)
+
 
