@@ -86,10 +86,11 @@ nx.draw(G, pos, with_labels=True, node_size=2000, node_color="skyblue", font_siz
 edge_labels = nx.get_edge_attributes(G, 'relationship')
 nx.draw_networkx_edge_labels(G, pos, edge_labels=edge_labels, font_size=8, font_color="green")
 
-plt.title("Jaringan Semantik Pohon Keluarga (Posisi Manual)")
+plt.title("Semantic Network: Pohon Keluarga")
 plt.show()
 ```
 **Output :** <br>
-![image](https://github.com/user-attachments/assets/db0572f1-28d8-4315-adbf-fcbf682b0839)
+![image](https://github.com/user-attachments/assets/18cb25b1-0093-4a67-ab11-8fd7cb07becb)
+
 
 
